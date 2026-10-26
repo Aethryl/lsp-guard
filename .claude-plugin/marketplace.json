@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "lsp-guard",
+  "description": "Steers the agent to the language server instead of reading source through the shell",
+  "owner": {
+    "name": "Fabian Rutten"
+  },
+  "plugins": [
+    {
+      "name": "lsp-guard",
+      "source": "./plugins/lsp-guard",
+      "description": "Denies reading source files through cat/sed and whole-file reads of large files when a language server is available, and nudges symbol searches to the LSP",
+      "version": "0.1.0",
+      "author": {
+        "name": "Fabian Rutten"
+      },
+      "category": "development",
+      "keywords": ["lsp", "hooks", "tokens", "python", "rust", "typescript"]
+    }
+  ]
+}
