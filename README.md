@@ -28,7 +28,6 @@ A language is only guarded when one of its servers is on PATH.
 - **Denies** a whole-file Read of a source file over 300 lines until the agent outlines it
   with `documentSymbol` and reads a range. An explicit offset/limit always passes.
 - **Reminds** the agent to use `findReferences` or `workspaceSymbol` when it greps source.
-- **Skips** subagents, which have no LSP tool.
 
 ## Limits
 

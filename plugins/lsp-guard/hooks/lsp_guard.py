@@ -5,8 +5,6 @@ For every language whose server is on PATH:
   * Bash `cat`/`sed`/`head`/`tail`/`less`/`bat` on a source file is denied: use Read or LSP.
   * Read of a source file over READ_LIMIT lines without offset/limit is denied: outline first.
   * grep/rg (Bash or the Grep tool) over that language gets a reminder to use the LSP.
-
-Subagents have no LSP tool, so their calls pass through untouched.
 """
 
 from __future__ import annotations
@@ -147,8 +145,6 @@ def main() -> None:
     try:
         event = json.load(sys.stdin)
     except ValueError:
-        return
-    if event.get("agent_id"):
         return
     tool, tool_input = event.get("tool_name"), event.get("tool_input") or {}
     if tool == "Bash":

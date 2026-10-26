@@ -1,6 +1,6 @@
 {
   "name": "lsp-guard",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Denies reading source files through cat/sed and whole-file reads of large files when a language server is available, and nudges symbol searches to the LSP.",
   "author": {
     "name": "Fabian Rutten"
