@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset=".github/logo-dark.svg">
-    <img src=".github/logo-light.svg" alt="lsp-guard" width="296" height="64">
+    <img src=".github/logo-light.svg" alt="lsp-guard" width="255" height="64">
   </picture>
 </p>
 
